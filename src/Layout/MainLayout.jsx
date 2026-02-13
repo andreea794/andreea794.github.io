@@ -1,21 +1,23 @@
+import { Box } from "@mui/material";
 import { Outlet, ScrollRestoration } from "react-router";
+import { neutral } from "../theme/colors";
 import Footer from "./Footer";
-import { Box, Container } from "@mui/material";
 import MainAppBar from "./MainAppbar";
 
 export default function MainLayout() {
   return (
     <Box
       sx={{
-        display: "grid",
-        gridTemplateRows: "auto 1fr auto",
+        display: "flex",
+        flexDirection: "column",
         minHeight: "100vh",
+        background: neutral.background,
       }}
     >
       <MainAppBar />
       <ScrollRestoration />
 
-      <Box component="main" sx={{ py: 2 }}>
+      <Box component="main" sx={{ flex: 1 }}>
         <Outlet />
       </Box>
 
