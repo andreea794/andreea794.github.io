@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Mon, 23 Mar 2026 10:26:53 GMT
+ * Generated on Mon, 23 Mar 2026 10:28:10 GMT
  */
 
 export const colorBrandGreen500 = "#29d48c";
