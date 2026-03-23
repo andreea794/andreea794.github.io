@@ -1,11 +1,11 @@
 /**
  * Do not edit directly
- * Generated on Mon, 23 Mar 2026 15:06:21 GMT
+ * Generated on Mon, 23 Mar 2026 15:23:15 GMT
  */
 
 :root {
-  --ds-color-brand-green-500: #f318f8;
-  --ds-color-brand-green-600: #c016d0;
+  --ds-color-brand-green-500: #29d48c;
+  --ds-color-brand-green-600: #1fb876;
   --ds-color-brand-green-alpha-8: rgba(41, 212, 140, 0.08);
   --ds-color-brand-green-alpha-10: rgba(41, 212, 140, 0.1);
   --ds-color-brand-green-alpha-15: rgba(41, 212, 140, 0.15);
@@ -25,8 +25,8 @@
   --ds-color-status-error: #f44336;
   --ds-color-status-warning: #ff9800;
   --ds-color-status-info: #2196f3;
-  --ds-color-semantic-brand-default: #f318f8;
-  --ds-color-semantic-brand-dark: #c016d0;
+  --ds-color-semantic-brand-default: #29d48c;
+  --ds-color-semantic-brand-dark: #1fb876;
   --ds-color-semantic-brand-alpha-8: rgba(41, 212, 140, 0.08);
   --ds-color-semantic-brand-alpha-10: rgba(41, 212, 140, 0.1);
   --ds-color-semantic-brand-alpha-15: rgba(41, 212, 140, 0.15);
@@ -51,7 +51,7 @@
   --ds-color-semantic-text-muted: rgba(255, 255, 255, 0.4);
   --ds-color-semantic-text-disabled: rgba(255, 255, 255, 0.35);
   --ds-color-semantic-text-nav: #cccccc;
-  --ds-color-semantic-status-success: #f318f8;
+  --ds-color-semantic-status-success: #29d48c;
   --ds-color-semantic-status-error: #f44336;
   --ds-color-semantic-status-warning: #ff9800;
   --ds-color-semantic-status-info: #2196f3;
