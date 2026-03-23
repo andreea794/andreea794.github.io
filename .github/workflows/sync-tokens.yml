@@ -5,7 +5,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'tokens.json'
+      - "tokens.json"
 
 # Required for peter-evans/create-pull-request to open / update the PR
 permissions:
@@ -26,8 +26,8 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'yarn'
+          node-version: "20"
+          cache: "yarn"
 
       - name: Install dependencies
         run: yarn install --frozen-lockfile
@@ -44,10 +44,10 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           # Only stage generated token files — never the source JSON
           add-paths: src/styles/tokens/**
-          commit-message: 'chore(tokens): regenerate from updated Figma token JSON'
+          commit-message: "chore(tokens): regenerate from updated Figma token JSON"
           branch: chore/sync-design-tokens
           delete-branch: true
-          title: '🎨 Sync design tokens from Figma'
+          title: "🎨 Sync design tokens from Figma"
           body: |
             ## 🎨 Design Token Sync
 
