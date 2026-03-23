@@ -1,0 +1,49 @@
+{
+  "color": {
+    "semantic": {
+      "brand": {
+        "default":  { "value": "{color.brand.green-500}",         "type": "color", "description": "Primary CTA, accents, links" },
+        "dark":     { "value": "{color.brand.green-600}",         "type": "color", "description": "Hover / pressed state" },
+        "alpha-8":  { "value": "rgba(41, 212, 140, 0.08)",        "type": "color", "description": "Very subtle muted bg" },
+        "alpha-10": { "value": "rgba(41, 212, 140, 0.10)",        "type": "color", "description": "Subtle bg highlight" },
+        "alpha-15": { "value": "rgba(41, 212, 140, 0.15)",        "type": "color", "description": "Button hover glow, card bg" },
+        "alpha-20": { "value": "rgba(41, 212, 140, 0.20)",        "type": "color", "description": "Brand border default" },
+        "alpha-25": { "value": "rgba(41, 212, 140, 0.25)",        "type": "color", "description": "Faded icon / quote mark" },
+        "alpha-30": { "value": "rgba(41, 212, 140, 0.30)",        "type": "color", "description": "Medium border emphasis" }
+      },
+      "bg": {
+        "default":        { "value": "{color.neutral.gray-950}",        "type": "color", "description": "Page background" },
+        "surface":        { "value": "{color.neutral.gray-900}",        "type": "color", "description": "Card / paper" },
+        "surface-light":  { "value": "{color.neutral.gray-800}",        "type": "color", "description": "Elevated surface" },
+        "surface-glass":  { "value": "rgba(23, 23, 23, 0.60)",          "type": "color", "description": "Frosted-glass nav / buttons" },
+        "surface-dark":   { "value": "rgba(18, 18, 18, 0.95)",          "type": "color", "description": "Dark overlay — name card" },
+        "surface-subtle": { "value": "rgba(255, 255, 255, 0.02)",       "type": "color", "description": "Service / testimonial card fill" },
+        "surface-hover":  { "value": "rgba(255, 255, 255, 0.04)",       "type": "color", "description": "Card hover fill" }
+      },
+      "border": {
+        "default": { "value": "rgba(255, 255, 255, 0.06)",  "type": "color", "description": "Default card border" },
+        "light":   { "value": "rgba(255, 255, 255, 0.10)",  "type": "color", "description": "Input borders, icon buttons" },
+        "medium":  { "value": "rgba(255, 255, 255, 0.12)",  "type": "color", "description": "Slightly more visible border" },
+        "hover":   { "value": "rgba(255, 255, 255, 0.30)",  "type": "color", "description": "Button hover border" },
+        "dark":    { "value": "{color.neutral.gray-700}",   "type": "color", "description": "Solid dark — nav container" }
+      },
+      "text": {
+        "primary":   { "value": "{color.neutral.off-white}",      "type": "color", "description": "Headings and titles" },
+        "secondary": { "value": "rgba(255, 255, 255, 0.75)",      "type": "color", "description": "Body text" },
+        "tertiary":  { "value": "rgba(255, 255, 255, 0.50)",      "type": "color", "description": "Descriptions, low-emphasis" },
+        "muted":     { "value": "rgba(255, 255, 255, 0.40)",      "type": "color", "description": "Eyebrows, captions" },
+        "disabled":  { "value": "rgba(255, 255, 255, 0.35)",      "type": "color", "description": "Disabled / placeholder" },
+        "nav":       { "value": "{color.neutral.nav}",            "type": "color", "description": "Nav links default" }
+      },
+      "status": {
+        "success": { "value": "{color.brand.green-500}",  "type": "color" },
+        "error":   { "value": "{color.status.error}",     "type": "color" },
+        "warning": { "value": "{color.status.warning}",   "type": "color" },
+        "info":    { "value": "{color.status.info}",      "type": "color" }
+      },
+      "shadow": {
+        "default": { "value": "rgba(0, 0, 0, 0.30)", "type": "color", "description": "Card hover shadow" }
+      }
+    }
+  }
+}
