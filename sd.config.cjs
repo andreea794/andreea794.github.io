@@ -2,7 +2,7 @@
 
 /**
  * Style Dictionary v3 config
- * Reads: tokens/primitives.json + tokens/semantic.json  (Tokens Studio format)
+ * Reads: tokens.json  (Tokens Studio single-file format)
  * Writes:
  *   src/styles/tokens/tokens.css        — CSS custom properties  (--ds-*)
  *   src/styles/tokens/_colors.scss      — Color SCSS variables
@@ -13,6 +13,38 @@
  */
 
 const StyleDictionary = require('style-dictionary');
+
+// ─── Parser: Tokens Studio single-file format ─────────────────────────────────
+//
+// Tokens Studio writes all token sets into one JSON file where each top-level
+// key is a set name ("primitives", "semantic") and reserved keys start with "$".
+// Style Dictionary needs a flat merged object, so we strip the set wrappers here.
+//
+StyleDictionary.registerParser({
+  pattern: /tokens\.json$/,
+  parse({ contents }) {
+    const data = JSON.parse(contents);
+    const merged = {};
+    for (const [key, value] of Object.entries(data)) {
+      if (!key.startsWith('$') && typeof value === 'object') {
+        // Deep-merge each token set into the shared output object
+        deepMerge(merged, value);
+      }
+    }
+    return merged;
+  },
+});
+
+function deepMerge(target, source) {
+  for (const [k, v] of Object.entries(source)) {
+    if (v && typeof v === 'object' && !Array.isArray(v) && !('value' in v)) {
+      target[k] = target[k] || {};
+      deepMerge(target[k], v);
+    } else {
+      target[k] = v;
+    }
+  }
+}
 
 // ─── Custom transforms ────────────────────────────────────────────────────────
 
@@ -105,16 +137,11 @@ const isRadius     = t => t.type === 'borderRadius';
 
 module.exports = {
   /**
-   * Source token files.
-   * $metadata.json and $themes.json (Tokens Studio internal files) are
-   * deliberately omitted — they contain no design tokens.
-   *
-   * If you add a new token set in Tokens Studio, add its file here.
+   * Single source of truth: the Tokens Studio single-file export.
+   * The custom parser above merges all token sets into a flat object
+   * before Style Dictionary processes them.
    */
-  source: [
-    'tokens/primitives.json',
-    'tokens/semantic.json',
-  ],
+  source: ['tokens.json'],
 
   platforms: {
 
