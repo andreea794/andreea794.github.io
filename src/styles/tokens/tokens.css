@@ -1,11 +1,17 @@
 /**
  * Do not edit directly
- * Generated on Mon, 23 Mar 2026 10:26:53 GMT
+ * Generated on Mon, 23 Mar 2026 14:24:42 GMT
  */
 
 :root {
   --ds-color-brand-green-500: #29d48c;
   --ds-color-brand-green-600: #1fb876;
+  --ds-color-brand-green-alpha-8: rgba(41, 212, 140, 0.08);
+  --ds-color-brand-green-alpha-10: rgba(41, 212, 140, 0.1);
+  --ds-color-brand-green-alpha-15: rgba(41, 212, 140, 0.15);
+  --ds-color-brand-green-alpha-20: rgba(41, 212, 140, 0.2);
+  --ds-color-brand-green-alpha-25: rgba(41, 212, 140, 0.25);
+  --ds-color-brand-green-alpha-30: rgba(41, 212, 140, 0.3);
   --ds-color-neutral-gray-950: #0c0c0c;
   --ds-color-neutral-gray-900: #121212;
   --ds-color-neutral-gray-800: #171717;

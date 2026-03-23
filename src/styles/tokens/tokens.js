@@ -1,10 +1,16 @@
 /**
  * Do not edit directly
- * Generated on Mon, 23 Mar 2026 10:26:53 GMT
+ * Generated on Mon, 23 Mar 2026 14:24:42 GMT
  */
 
 export const colorBrandGreen500 = "#29d48c";
 export const colorBrandGreen600 = "#1fb876";
+export const colorBrandGreenAlpha8 = "rgba(41, 212, 140, 0.08)";
+export const colorBrandGreenAlpha10 = "rgba(41, 212, 140, 0.1)";
+export const colorBrandGreenAlpha15 = "rgba(41, 212, 140, 0.15)";
+export const colorBrandGreenAlpha20 = "rgba(41, 212, 140, 0.2)";
+export const colorBrandGreenAlpha25 = "rgba(41, 212, 140, 0.25)";
+export const colorBrandGreenAlpha30 = "rgba(41, 212, 140, 0.3)";
 export const colorNeutralGray950 = "#0c0c0c";
 export const colorNeutralGray900 = "#121212";
 export const colorNeutralGray800 = "#171717";
