@@ -1,3 +1,6 @@
+/* Design system token definitions — generated, do not edit directly */
+@import './styles/tokens/tokens.css';
+
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +12,9 @@ html {
 }
 
 body {
-  font-family:
-    "Poppins",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    sans-serif;
-  font-size: 16px;
-  background: #0c0c0c;
+  font-family: var(--ds-typography-font-family-primary);
+  font-size: var(--ds-typography-font-size-base);
+  background: var(--ds-color-semantic-bg-default);
   color: #fff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -27,16 +25,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #0c0c0c;
+  background: var(--ds-color-semantic-bg-default);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #2a2a2a;
-  border-radius: 3px;
+  background: var(--ds-color-neutral-gray-600);
+  border-radius: var(--ds-border-radius-xs);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #3a3a3a;
+  background: var(--ds-color-neutral-gray-500);
 }
 
 a {
@@ -45,6 +43,6 @@ a {
 }
 
 ::selection {
-  background: #29d48c;
-  color: #0c0c0c;
+  background: var(--ds-color-semantic-brand-default);
+  color: var(--ds-color-semantic-bg-default);
 }
