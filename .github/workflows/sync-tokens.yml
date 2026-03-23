@@ -1,12 +1,11 @@
 name: Sync Design Tokens
 
-# Triggers whenever a push to main touches anything inside tokens/
-# (i.e. when Tokens Studio syncs updated JSON from Figma).
+# Triggers whenever a push to main updates the Tokens Studio single-file export.
 on:
   push:
     branches: [main]
     paths:
-      - 'tokens/**'
+      - 'tokens.json'
 
 # Required for peter-evans/create-pull-request to open / update the PR
 permissions:
@@ -52,7 +51,7 @@ jobs:
           body: |
             ## 🎨 Design Token Sync
 
-            A push to `tokens/` was detected (Tokens Studio → GitHub sync).
+            A push to `tokens.json` was detected (Tokens Studio → GitHub sync).
             This PR contains the regenerated Style Dictionary output.
 
             ### Changed files
