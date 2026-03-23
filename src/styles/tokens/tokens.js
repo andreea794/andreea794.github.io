@@ -1,14 +1,10 @@
 /**
  * Do not edit directly
-<<<<<<< HEAD
- * Generated on Mon, 23 Mar 2026 14:43:59 GMT
-=======
- * Generated on Mon, 23 Mar 2026 14:45:36 GMT
->>>>>>> 644bf13401d07f95f0f464c5b4d29e61f2b40731
+ * Generated on Mon, 23 Mar 2026 15:06:21 GMT
  */
 
-export const colorBrandGreen500 = "#29d48c";
-export const colorBrandGreen600 = "#1fb876";
+export const colorBrandGreen500 = "#f318f8";
+export const colorBrandGreen600 = "#c016d0";
 export const colorBrandGreenAlpha8 = "rgba(41, 212, 140, 0.08)";
 export const colorBrandGreenAlpha10 = "rgba(41, 212, 140, 0.1)";
 export const colorBrandGreenAlpha15 = "rgba(41, 212, 140, 0.15)";
@@ -28,8 +24,8 @@ export const colorNeutralNav = "#cccccc";
 export const colorStatusError = "#f44336";
 export const colorStatusWarning = "#ff9800";
 export const colorStatusInfo = "#2196f3";
-export const colorSemanticBrandDefault = "#29d48c";
-export const colorSemanticBrandDark = "#1fb876";
+export const colorSemanticBrandDefault = "#f318f8";
+export const colorSemanticBrandDark = "#c016d0";
 export const colorSemanticBrandAlpha8 = "rgba(41, 212, 140, 0.08)";
 export const colorSemanticBrandAlpha10 = "rgba(41, 212, 140, 0.1)";
 export const colorSemanticBrandAlpha15 = "rgba(41, 212, 140, 0.15)";
@@ -54,7 +50,7 @@ export const colorSemanticTextTertiary = "rgba(255, 255, 255, 0.5)";
 export const colorSemanticTextMuted = "rgba(255, 255, 255, 0.4)";
 export const colorSemanticTextDisabled = "rgba(255, 255, 255, 0.35)";
 export const colorSemanticTextNav = "#cccccc";
-export const colorSemanticStatusSuccess = "#29d48c";
+export const colorSemanticStatusSuccess = "#f318f8";
 export const colorSemanticStatusError = "#f44336";
 export const colorSemanticStatusWarning = "#ff9800";
 export const colorSemanticStatusInfo = "#2196f3";
